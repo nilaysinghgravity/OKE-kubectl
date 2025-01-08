@@ -1,4 +1,4 @@
-name: OKE kubect testing
+name: OKE kubect testing 
 
 on:
   push:
