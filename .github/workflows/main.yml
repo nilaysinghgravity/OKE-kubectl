@@ -1,13 +1,13 @@
-name: Build, Push, and Deploy to Kubernetes
+name: OKE kubect testing
 
 on:
   push:
-    branches:
-      - prod-kube
-  workflow_dispatch: # Allows manual triggering of the workflow
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
-  deploy-to-kubernetes:
+  build:
 
     runs-on: ubuntu-latest
     name: Install Kubectl for OKE
